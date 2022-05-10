@@ -1,0 +1,86 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+
+      <h1 id="heading">Image recognition app</h1>
+
+      <br><br>
+
+      <p style="font-size: 25px; color: red; font-weight: bold; font-variant: small-caps;" >model is trained to identify the following objects: </p>
+
+      <br>
+      <br>
+
+      <hr>
+
+      <h4 class="objects">water bottle</h4>
+
+
+      <hr>
+
+      <h4 class="objects">watch</h4>
+
+
+      <hr>
+
+      <h4 class="objects">book</h4>
+
+
+      <hr>
+
+      <h4 class="objects">laptop charger</h4>
+
+
+      <hr>
+
+      <label>Webcam View - </label>
+
+      <br><br>
+
+      <div id="camera"></div>
+      <br>
+      <br>
+
+      <label>Photo captured - </label>
+      <br>
+
+      <div id="photo_captured"></div>
+
+      <br>
+      <br>
+
+      <button id="capture_photo" type="button" class="btn btn-primary" onclick="take_snapshot()">Capture Photo</button>
+      <br>
+      <br>
+      <button id="identify_object" type="button" class="btn btn-success" onclick="check()">Identify object</button>
+      <br>
+      <br>
+
+      <p style="font-size: 22px;">Object : <span id="object_name"></span> </p>
+      <p style="font-size: 22px;">Accuracy : <span id="accuracy"></span> </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
